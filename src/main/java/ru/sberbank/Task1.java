@@ -26,38 +26,35 @@ public class Task1 {
 
         // тестирование
         int sid = 555;
-        Tester Valentin = new Tester(sid);
-        System.out.println(Valentin.name + " id = " + Valentin.sid);
-        if(Valentin.isFree == true){
-            System.out.println(Valentin.name + " может взять задачу в тестирование");
+        Tester Test = new Tester(sid);
+        System.out.println("id Тестировщика = " + Test.sid);
+        if(Test.isFree == true){
+            System.out.println("Тестировщик может взять задачу в тестирование");
         } else {
-            System.out.println(Valentin.name + " тестирует задачу ");
+            System.out.println("Тестировщик тестирует задачу ");
         }
 
-        Valentin.addTask(Core666);
-        System.out.println(Valentin.name + " id = " + Valentin.sid);
-        if(Valentin.isFree == true){
-            System.out.println(Valentin.name + " может взять задачу в тестирование");
+        Test.addTask(Core666);
+        System.out.println("id Тестировщика = " + Test.sid);
+        if(Test.isFree == true){
+            System.out.println("Тестировщик может взять задачу в тестирование");
         } else {
-            System.out.println(Valentin.name + " взял задачу в тестирование ");
+            System.out.println("Тестировщик взял задачу в тестирование ");
         }
 
-        Valentin.checkTask();
-        System.out.println(Valentin.name + " id = " + Valentin.sid);
-        if(Valentin.isFree == true){
-            System.out.println(Valentin.name + " может взять задачу в тестирование");
+        Test.checkTask();
+        System.out.println("id Тестировщика = " + Test.sid);
+        if(Test.isFree == true){
+            System.out.println("Тестировщик может взять задачу в тестирование");
         } else {
-            System.out.println(Valentin.name + " тестирует задачу ");
+            System.out.println("Тестировщик тестирует задачу ");
         }
-        Valentin.release();
-        System.out.println(Valentin.name + " id = " + Valentin.sid);
-        if(Valentin.isFree == true){
-            System.out.println(Valentin.name + " отсмотрел все задачи");
+        Test.release();
+        System.out.println("id Тестировщика = " + Test.sid);
+        if(Test.isFree == true){
+            System.out.println("Тестировщик отсмотрел все задачи");
         } else {
-            System.out.println(Valentin.name + " тестирует задачу ");
+            System.out.println("Тестировщик тестирует задачу ");
         }
-
-
     }
-
 }

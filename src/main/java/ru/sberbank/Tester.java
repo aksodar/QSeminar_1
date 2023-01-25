@@ -4,7 +4,6 @@ public class Tester {
     int sid;
     Task currentTask;
     boolean isFree;
-    String name = "Valentin";
 
     public Tester (int sid, boolean isFree){
         this.sid = sid;
