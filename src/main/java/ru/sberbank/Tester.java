@@ -21,7 +21,7 @@ public class Tester {
 
     public Task checkTask() {
         if (this.currentTask != null) {
-            this.currentTask.isDeveloped = true;
+            this.currentTask.isTested = true;
         }
         return currentTask;
     }
